@@ -73,7 +73,7 @@ export default function App() {
 
   return (
     <>
-    <div className='bg-black '>
+    <div className='bg-black h-screen'>
     <div className='max-w-container mx-auto pt-[60px] pb-[100px]'>
       <div className='bg-[#97B4FF] relative'>
         <h1 className='text-center text-6xl text-white font-bold py-[60px] relative'>Todo App</h1>
