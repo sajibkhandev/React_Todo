@@ -76,11 +76,15 @@ export default function App() {
     <div className='bg-black h-screen'>
     <div className='max-w-container mx-auto pt-[60px] pb-[100px]'>
       <div className='bg-[#97B4FF] relative'>
-        <h1 className='text-center text-3xl md:text-6xl text-white font-bold py-[60px] relative'>Todo App</h1>
-        <input onChange={handleInput1}  value={name} type="text" placeholder='Full Name :' className='block mx-auto md:w-[400px] mb-[12px] rounded-[2px] py-[3px]  px-[10px] text-lg font-semibold placeholder:text-base placeholder:font-normal placeholder:italic outline-0 ' />
-        {span1?<span className='text-red-500 absolute top-[190px] right-[188px]'><FaTimes/></span>:""}
-        <textarea onChange={handleInput2} value={caption} type="text" placeholder='Here is your Description' className='block mx-auto md:w-[400px] rounded-[2px] py-[5px] px-[10px] text-lg font-semibold placeholder:text-base placeholder:font-normal placeholder:italic outline-0'/>
-        {span2?<span className='text-red-500 absolute top-[234px] right-[188px]'><FaTimes/></span>:""}
+        <h1 className='text-center text-3xl md:text-6xl text-white font-bold py-[60px] '>Todo App</h1>
+        <div className='relative  mx-auto w-[250px]'>
+          <input onChange={handleInput1}  value={name} type="text" placeholder='Full Name :' className=' relative block mx-auto md:w-[400px] mb-[12px] rounded-[2px] py-[3px]  px-[10px] text-lg font-semibold placeholder:text-base placeholder:font-normal placeholder:italic outline-0 ' />
+        {span1?<span className='text-red-500 absolute top-[10px] left-[218px]'><FaTimes/></span>:""}
+        </div>
+       <div className='relative  mx-auto w-[250px]'>
+         <textarea onChange={handleInput2} value={caption} type="text" placeholder='Here is your Description' className='block mx-auto md:w-[400px] rounded-[2px] py-[5px] px-[10px] text-lg font-semibold placeholder:text-base placeholder:font-normal placeholder:italic outline-0'/>
+        {span2?<span className='text-red-500 absolute top-[10px] left-[218px]'><FaTimes/></span>:""}
+       </div>
         {edit?
         <div className='flex justify-center'>
         <button onClick={handleUpdate} className='inline-block bg-purple-500 py-2 px-5 md:py-2.5 md:px-8 text-white rounded-md font-bold md:text-xl my-[30px] '>Update</button>
