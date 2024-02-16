@@ -74,16 +74,16 @@ export default function App() {
   return (
     <>
     <div className='bg-black h-screen'>
-    <div className='max-w-container mx-auto pt-[60px] pb-[100px]'>
-      <div className='bg-[#97B4FF] relative'>
-        <h1 className='text-center text-3xl md:text-6xl text-white font-bold py-[60px] '>Todo App</h1>
-        <div className='relative  mx-auto w-[250px]'>
+    <div className='max-w-container mx-auto pt-[60px] px-6  md:pb-[100px]'>
+      <div className='bg-[#97B4FF]  relative'>
+        <h1 className='text-center text-3xl md:text-6xl text-white font-bold py-10 md:py-[60px] '>Todo App</h1>
+        <div className='relative  mx-auto w-[250px] md:w-[400px]'>
           <input onChange={handleInput1}  value={name} type="text" placeholder='Full Name :' className=' relative block mx-auto md:w-[400px] mb-[12px] rounded-[2px] py-[3px]  px-[10px] text-lg font-semibold placeholder:text-base placeholder:font-normal placeholder:italic outline-0 ' />
-        {span1?<span className='text-red-500 absolute top-[10px] left-[218px]'><FaTimes/></span>:""}
+        {span1?<span className='text-red-500 absolute top-[10px] left-[218px] md:left-[370px]'><FaTimes/></span>:""}
         </div>
-       <div className='relative  mx-auto w-[250px]'>
+       <div className='relative  mx-auto w-[250px] md:w-[400px]'>
          <textarea onChange={handleInput2} value={caption} type="text" placeholder='Here is your Description' className='block mx-auto md:w-[400px] rounded-[2px] py-[5px] px-[10px] text-lg font-semibold placeholder:text-base placeholder:font-normal placeholder:italic outline-0'/>
-        {span2?<span className='text-red-500 absolute top-[10px] left-[218px]'><FaTimes/></span>:""}
+        {span2?<span className='text-red-500 absolute top-[10px] left-[218px] md:left-[370px]'><FaTimes/></span>:""}
        </div>
         {edit?
         <div className='flex justify-center'>
@@ -96,7 +96,7 @@ export default function App() {
         }
         
       </div>
-      <div className='bg-[#97B4FF] py-[50px] '>
+      <div className='bg-[#97B4FF] py-7 md:py-[50px] '>
         <div className=''>
           {arr.map((item,index)=>(
             <div key={index} className='w-[600px] mx-auto mb-[15px] border-2 border-white rounded-md relative'>
