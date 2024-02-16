@@ -83,11 +83,11 @@ export default function App() {
         {span2?<span className='text-red-500 absolute top-[234px] right-[188px]'><FaTimes/></span>:""}
         {edit?
         <div className='flex justify-center'>
-        <button onClick={handleUpdate} className='inline-block bg-purple-500 py-[10px] px-[30px] text-white rounded-md font-bold text-xl my-[30px] '>Update</button>
+        <button onClick={handleUpdate} className='inline-block bg-purple-500 py-2 px-5 md:py-2.5 md:px-8 text-white rounded-md font-bold md:text-xl my-[30px] '>Update</button>
         </div>
         :
         <div className='flex justify-center'>
-        <button onClick={handleButton} className='inline-block bg-purple-500 py-[10px] px-[30px] text-white rounded-md font-bold text-xl my-[30px] '>Add Todo</button>
+        <button onClick={handleButton} className='inline-block bg-purple-500 py-2 px-5 md:py-2.5 md:px-8 text-white rounded-md font-bold md:text-xl my-[30px] '>Add Todo</button>
         </div>
         }
         
