@@ -99,7 +99,7 @@ export default function App() {
       <div className='bg-[#97B4FF] py-7 md:py-[50px] '>
         <div className=''>
           {arr.map((item,index)=>(
-            <div key={index} className=' mx-6 md:w-[600px] mx-auto mb-[15px] border-2 border-white rounded-md relative'>
+            <div key={index} className=' mx-6 md:w-[600px] md:mx-auto mb-[15px] border-2 border-white rounded-md relative'>
               <h1 className='text-2xl font-bold text-black py-[10px] pr-[40px] pl-[40px] '>{item.name}</h1>
             <p className='text-sm font-semibold text-black pb-[10px] pr-[40px] pl-[40px]'>{item.caption}</p>
             <FaTrash onClick={()=>handelDelete(index)}  className='text-[#B70C15] absolute top-[20px] right-[30px]'/>
