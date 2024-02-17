@@ -73,7 +73,7 @@ export default function App() {
 
   return (
     <>
-    <div className='bg-black h-screen'>
+    <div className='bg-black h-screen overflow-scroll'>
     <div className='max-w-container mx-auto pt-[60px] px-6  md:pb-[100px]'>
       <div className='bg-[#97B4FF]  relative'>
         <h1 className='text-center text-3xl md:text-6xl text-white font-bold py-10 md:py-[60px] '>Todo App</h1>
@@ -99,7 +99,7 @@ export default function App() {
       <div className='bg-[#97B4FF] py-7 md:py-[50px] '>
         <div className=''>
           {arr.map((item,index)=>(
-            <div key={index} className='w-[600px] mx-auto mb-[15px] border-2 border-white rounded-md relative'>
+            <div key={index} className=' mx-6 md:w-[600px] mx-auto mb-[15px] border-2 border-white rounded-md relative'>
               <h1 className='text-2xl font-bold text-black py-[10px] pr-[40px] pl-[40px] '>{item.name}</h1>
             <p className='text-sm font-semibold text-black pb-[10px] pr-[40px] pl-[40px]'>{item.caption}</p>
             <FaTrash onClick={()=>handelDelete(index)}  className='text-[#B70C15] absolute top-[20px] right-[30px]'/>
